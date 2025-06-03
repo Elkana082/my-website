@@ -467,7 +467,7 @@
         display: flex;
         flex-direction: row;  
        position: relative;
-       left: 29%;
+       left: 33%;
        bottom: 5vh;
        gap: 8px;
       }
@@ -759,7 +759,7 @@
       }
       .register button{
         width: 20%;
-        height: 3vh;
+        height: 4vh;
         background: rgb(255, 140, 0);
         border-radius: 10px;
         border: 2px solid white;
