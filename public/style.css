@@ -3,6 +3,11 @@
    background:burlywood;
  }
   @media (min-width :768px){
+     html,body{
+      width: 100%;
+      overflow-x:hidden;
+      margin: 0;
+    }
     header{
       background:rgb(109, 7, 7);
        color: white;
@@ -23,7 +28,7 @@
     } 
     .navbar p3 i{
       position: relative;
-      bottom: 7vh;
+      bottom: 8vh;
       right: 7vh;
       font-size: 25px;
     }
@@ -59,7 +64,7 @@
       font-size: 20px;
      position: relative;
      left: 35%;
-     bottom: 7vh;
+     bottom: 8vh;
      gap: 20px;
     }
     .top-section p{
@@ -371,7 +376,7 @@
       transition: 0.3s ease;
     }
     .profile-card{
-      background:sandybrown;
+      background:rgb(238, 124, 25);
       border: 3px solid white;
       height: 100%;
       padding: 25px 25px;
@@ -395,6 +400,7 @@
     }
     .profile-card button{
       background: rgb(240, 223, 203);
+      position: relative;
       height: 5vh;
       border-radius: 10px;
       color: black;
@@ -404,6 +410,11 @@
     }
   }
   @media (max-width:768px){
+    html,body{
+      width: 100%;
+      overflow-x:hidden;
+      margin: 0;
+    }
     header{
       background:rgb(109, 7, 7);
        color: white;
@@ -413,27 +424,29 @@
        max-height: 70px;
        z-index: 5;
        border-bottom: 2px solid white;
+       max-width: 100%;
       }
       .navbar .nav-logo a{
         text-decoration:underline;
         color:gold;
         font-size: larger;
         position:relative;
-        left:15%;
+        left:13%;
         font-style: oblique;
       } 
       .navbar p3 i{
         position: relative;
-        bottom: 7vh;
-        right: 6vh;
+        bottom: 6vh;
+        right: 4vh;
       }
       .searchbar{
        position: relative;
        display: flex;
        flex-direction: row;
        font-size: 28px;
-       left: 4vh;
-       top: 4vh;
+       left: 2vh;
+       height: 4vh;
+       z-index: 5;
       } 
       .searchbar i{
         color: white;
@@ -454,9 +467,9 @@
         display: flex;
         flex-direction: row;  
        position: relative;
-       left: 30%;
-       bottom: 6vh;
-       gap: 10px;
+       left: 29%;
+       bottom: 5vh;
+       gap: 8px;
       }
       .nav-menue .nav-link{
         padding: 10px 10px;
@@ -548,11 +561,11 @@
       }
       .section-content{
         border-bottom: 2px solid white;
-        background: bisque;
+        background:bisque;
         color:black;
         display: flex;
         flex-direction:row;
-        padding: 20px 20px;
+        padding: 10px 10px ;
         min-height: 100%;
         min-width: 100%;
         justify-content:space-evenly;
@@ -568,9 +581,9 @@
         padding: 10px 10px;
       }
       .section-content .buttons .button{
-        padding: 3px 3px;
-        font-size: smaller;
-        width: 65px;
+        padding: 7px 7px;
+        font-size: small;
+        width: 70px;
       }
       .section-content .hero-image{
         position: relative;
@@ -579,15 +592,16 @@
         min-height: 60%;
         max-height: 100%;
         border-radius: 5px;
+        right: 2vh;
       }
       .section-content .button{
         background:rgb(255, 140, 0);
         border-radius: 20px;
         border: 2px solid white;
-        padding: 3px 3px;
+        padding: 10px 10px;
         position: relative;
         top: 6vh;
-        right: 30vh;
+        right: 32vh;
       }
       .section-content .button:hover{
         background: white;
@@ -649,6 +663,7 @@
        }
       .contact-section .section-content button{
         width: 20vh;
+        height: 4vh;
         background: rgb(255, 140, 0);
         border: 2px solid white;
         border-radius: 20px;
@@ -677,7 +692,7 @@
         position:relative;
         text-decoration: underline;
         font-size: x-large;
-        left: 25%;
+        left: 16%;
       }
       .checkout-section p{
         background: palegoldenrod;
@@ -706,6 +721,7 @@
       .checkout-section form input{
        width: 50%;
        border-radius: 8px;
+       height: 3vh;
       }
       .checkout-section form article{
         max-width: 80%;
@@ -714,12 +730,14 @@
         background:white;
         border-radius: 20px;
         border: 2px solid rgb(255, 140, 0);
+        position: relative;
+        right: 3vh;
       }
       .checkout-section i{
         position: relative;
         top: 8vh;
         color:white;
-        left: 5vh;
+        left: 2vh;
         font-size: 30px;
       }
       .checkout-section i:hover{
@@ -751,11 +769,14 @@
         transition: 0.3s ease;
       }
       .profile-card{
-        background: blanchedalmond;
+        background: rgb(231, 143, 12);
         height: 100%;
         padding: 25px 25px;
         font-weight: 500;
         font-size: larger;
+        position: relative;
+        width: 60%;
+        left: 10%;
       }
       .profile-card .avatar{
         font-size: 42px;
@@ -773,7 +794,7 @@
       .profile-card button{
         background: rgb(255, 140, 0);
         color: white;
-        height: 3vh;
+        height: 4vh;
         border-radius: 10px;
       }
       .profile-card i:hover{
