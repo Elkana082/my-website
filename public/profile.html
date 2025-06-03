@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>profile</title>
+</head>
+<body>
+    
+   <div class="profile-card" >
+    <a href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+      <div class="avatar">👤</div>
+      <h2 id="username">User Name</h2>
+      <div class="profile-info">
+        <p><strong>Email:</strong> <span id="email">@gmail.com</span></p>
+        <p><strong>Residence:</strong> <span id="residence">maseno</span></p>
+      </div>
+      <a href="register.html">
+       <button type="submit">register</button>
+     </a>
+   </div>
+   <div id="orderHistory"></div>
+   <script>
+    window.onload=function(){
+        const user=JSON.parse(localStorage.getItem('userProfile'));
+      if(user){document.getElementById('username').textContent=user.username;
+     document.getElementById('email').textContent=user.email;
+     document.getElementById('residence').textContent=user.residence;
+     }else{document.getElementById('username').textContent='unknown';
+     document.getElementById('email').textContent='not yet available';
+     document.getElementById('residence').textContent='not saved';
+     }
+     
+
+    }
+    
+   </script> 
+</body>
+</html>

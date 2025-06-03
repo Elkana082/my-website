@@ -1,0 +1,783 @@
+
+  body{
+   background:burlywood;
+ }
+  @media (min-width :768px){
+    header{
+      background:rgb(109, 7, 7);
+       color: white;
+       position: fixed;
+       top: 0px;
+       width: 100%;
+       max-height: 70px;
+       z-index: 5;
+       border-bottom: 2px solid white;
+      }
+    .navbar .nav-logo a{
+      text-decoration:underline;
+      color:gold;
+      font-size: larger;
+      position:relative;
+      left:15%;
+      font-style: oblique;
+    } 
+    .navbar p3 i{
+      position: relative;
+      bottom: 7vh;
+      right: 7vh;
+      font-size: 25px;
+    }
+    .searchbar{
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+     font-size: 28px;
+     left: 4vh;
+     top: 4vh;
+    } 
+    .searchbar i{
+      color: black;
+    }
+    .searchbar input{
+      border-radius: 10px;
+      width: 30vh;
+      height: 4vh;
+    }
+    .searchbar button{
+      background: transparent;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .nav-menue{
+      display: flex;
+      flex-direction: row;  
+      font-size: 20px;
+     position: relative;
+     left: 35%;
+     bottom: 7vh;
+     gap: 20px;
+    }
+    .top-section p{
+      position: relative;
+      bottom: 30vh;
+      font-size: x-large;
+      font-weight: 600;
+      color: white;
+      max-width: 80%;
+      left: 3vh;
+    }
+    .top-section{
+      display: none;
+      position: relative;
+      left: 3vh;
+    }
+    .nav-menue .nav-link{
+      padding: 10px 10px;
+     position: relative;
+     bottom: 6vh;
+    }
+    ul{
+     list-style: none;
+    }
+    .nav-menue a{
+      color:white;
+      font-size: larger;
+    }
+    .nav-menue a:hover{
+      color: gold;
+    }
+    .category .nav-category{
+      display:none;
+      flex-direction: column;
+     background-color: gold;
+     min-height: 60vh;
+     max-height: 65vh;
+     width: 180px;
+     position: relative;
+     bottom: 16vh;
+     justify-content: space-evenly;
+     border-right:3px solid white ;
+    }
+    .nav-category i{
+     font-size: 28px;  
+     color: white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    }
+    .category .nav-linko{
+      padding: 10px 10px;
+      position: relative;
+      bottom: 20px;
+    }
+    ul{
+     list-style: none;
+    }
+    .category a{
+      text-decoration: none;
+      color: black;
+      font-size: larger;
+    }
+    .category a:hover{
+      background:white;
+      width:20vh;
+      text-decoration: underline;
+      border-radius: 20px;
+    }
+  
+    .itemo{
+      font-weight: 600;
+    }
+    main{
+      background:bisque;
+      position:relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      top: 7vh;
+    }
+    
+    .hero-section{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: space-between;
+     gap: 50px;
+     position: relative;
+     bottom: 4vh;
+     padding: 20px 20px ;
+    }
+    .hero-section .link{
+      display: none;
+    }
+    .section-content .title{
+      color: black;
+      font-weight: 600;
+      font-style: italic;
+    }
+    .section-content .description{
+      position: relative;
+      max-width:50%;
+      max-height: 100%;
+    }
+    .section-content{
+      border-bottom: 4px solid white;
+      background: burlywood;
+      color:black;
+      display: flex;
+      flex-direction:row;
+      border-radius: 10px;
+      padding: 20px 20px;
+      min-height: 100%;
+      min-width: 100%;
+      justify-content:space-evenly;
+    }
+    .hero-section .section-content .buttons{
+      position:relative;
+      left: 28vh;
+      bottom: 5vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 20px;
+    }
+    .section-content .buttons .button{
+      padding: 8px 8px;
+      font-size:small;
+      width: 65px;
+    }
+    .section-content .hero-image{
+      position: relative;
+      max-width: 100%;
+      min-width: 100%;
+      min-height: 60%;
+      max-height: 100%;
+      border-radius: 5px;
+    }
+    .section-content .button{
+      background:rgb(255, 140, 0);
+      border-radius: 20px;
+      border: 2px solid white;
+      padding: 3px 3px;
+      position: relative;
+      top: 6vh;
+      right: 30vh;
+    }
+    .section-content .button:hover{
+      background: white;
+      transition: 0.3s ease;
+      border: 2px solid orangered;
+      color: black;
+    }
+    .section-content a{
+      text-decoration: none;
+      color:white;
+      font-weight: 600;
+    }
+    .section-content .hero-details{
+      position: relative;
+      left: 2vh;
+    }
+    .contact-section .section-content{
+      display:  flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      padding: 30px 20px;
+      gap: 20px;
+  
+    }
+    .contact-section .section-content .message{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   
+    }
+    .contact-section .message .name{
+      height:4vh;
+      width: 40%;
+      border: 2px solid rgb(255, 140, 0);
+      border-radius: 10px;
+    }
+    .contact-section .message .meseg{
+      height: 100%;
+      width: 50%;
+      padding: 18px 18px;
+      border: 2px solid rgb(255, 140, 0);
+      border-radius: 10px;
+      
+    }
+    .contact-section .section-content .texts{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact-section .section-content .text{
+      font-size:smaller;
+      color: black;
+    }
+    .contact-section .section-content .section-title{
+      text-decoration: underline;
+      font-style: oblique; 
+      font-size: large;
+     }
+    .contact-section .section-content button{
+      width: 20vh;
+      background: rgb(255, 140, 0);
+      height: 5vh;
+      border: 2px solid white;
+      border-radius: 20px;
+     }
+    .contact-section .section-content button:hover{
+      background: white;
+      color: black;
+      border: 2px solid orangered;
+     }
+    .checkout-section .section-content{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 10px;
+    }
+    .checkout-section form{
+      display: flex;
+      font-size: larger;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      left: 10%;
+    }
+    .checkout-section  h2{
+      position:relative;
+      text-decoration: underline;
+      font-size: x-large;
+      left: 25%;
+    }
+    .checkout-section p{
+      background: palegoldenrod;
+      max-width: 60%;
+      height: 4vh;
+      padding: 10px 10px;
+      font-weight: 600;
+      font-size: large;
+      border: 2px solid orange;
+    }
+    .checkout-section form button{
+      background: rgb(255, 140, 0);
+      border-radius: 20px;
+      border: 2px solid white;
+      color: white;
+      width: 18vh;
+      height: 5vh;
+      position: relative;
+      left: 7vh;
+    }
+    .checkout-section form button:hover{
+      background: white;
+      color: black;
+      border: 2px solid orangered;
+    }
+    .checkout-section form input{
+     width: 50%;
+     height: 3vh;
+     border-radius: 8px;
+    }
+    .checkout-section form article{
+      max-width: 60%;
+      padding: 10px 10px;
+      font-weight: 600;
+      background: white;
+      border-radius: 20px;
+    }
+    .checkout-section i{
+      position: relative;
+      top: 8vh;
+      color:white;
+      left: 5vh;
+      font-size: 30px;
+    }
+    .checkout-section i:hover{
+      color: black;
+      transition: 0.3s ease;
+    }
+    .register{
+     background: burlywood; 
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+     padding: 25px 25px;
+     border-radius: 20px;
+    }
+    .register input{
+      border-radius: 10px;
+      width: 50%;
+      height: 4vh;
+      
+    }
+    .register button{
+      width: 20%;
+      height: 5vh;
+      background: rgb(255, 140, 0);
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+    .register button:hover{
+      background: white;
+      transition: 0.3s ease;
+    }
+    .profile-card{
+      background:sandybrown;
+      border: 3px solid white;
+      height: 100%;
+      padding: 25px 25px;
+      font-weight: 500;
+      font-size: larger;
+      position: relative;
+      left: 30%;
+      width: 40%;
+    }
+    .profile-card .avatar{
+      font-size: 42px;
+      width: 25%;
+      border-radius: 50%;
+      position: relative;
+      padding: 10px 10px;
+      left: 3vh;
+    }
+    .profile-card i{
+      font-size: 32px;
+      color: white;
+    }
+    .profile-card button{
+      background: rgb(240, 223, 203);
+      height: 5vh;
+      border-radius: 10px;
+      color: black;
+    }
+    .profile-card i:hover{
+      color: black;
+    }
+  }
+  @media (max-width:768px){
+    header{
+      background:rgb(109, 7, 7);
+       color: white;
+       position: fixed;
+       top: 0px;
+       width: 100%;
+       max-height: 70px;
+       z-index: 5;
+       border-bottom: 2px solid white;
+      }
+      .navbar .nav-logo a{
+        text-decoration:underline;
+        color:gold;
+        font-size: larger;
+        position:relative;
+        left:15%;
+        font-style: oblique;
+      } 
+      .navbar p3 i{
+        position: relative;
+        bottom: 7vh;
+        right: 6vh;
+      }
+      .searchbar{
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       font-size: 28px;
+       left: 4vh;
+       top: 4vh;
+      } 
+      .searchbar i{
+        color: white;
+      }
+      .searchbar input{
+        border-radius: 10px;
+        height: 3vh;
+      }
+      .searchbar button{
+        font-size: 20px;
+        text-decoration: none;
+      }
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .nav-menue{
+        display: flex;
+        flex-direction: row;  
+       position: relative;
+       left: 30%;
+       bottom: 6vh;
+       gap: 10px;
+      }
+      .nav-menue .nav-link{
+        padding: 10px 10px;
+       position: relative;
+       bottom: 6vh;
+      }
+      ul{
+       list-style: none;
+      }
+      .nav-menue a{
+        color:white;
+        font-size: larger;
+      }
+      .nav-menue a:hover{
+        color: gold;
+      }
+      .category .nav-category{
+        display:none;
+        flex-direction: column;
+       background-color:orange;
+       min-height: 60vh;
+       max-height: 65vh;
+       width: 180px;
+       position: relative;
+       bottom: 11vh;
+       justify-content: space-evenly;
+       border-right:3px solid white ;
+      }
+      .nav-category i{
+       font-size: 28px;  
+       color: white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+      }
+      .category .nav-linko{
+        padding: 10px 10px;
+        position: relative;
+        bottom: 20px;
+      }
+      ul{
+       list-style: none;
+      }
+      .category a{
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+      }
+      .category a:hover{
+        background:white;
+        width:20vh;
+        text-decoration: underline;
+        border-radius: 20px;
+      }
+    
+      .itemo{
+        font-weight: 600;
+      }
+      main{
+        background:burlywood;
+        position:relative;
+        top: 7vh;
+      }
+      .top-section p {
+        max-width: 90%;
+        position: relative;
+        left: 3vh;
+        bottom: 33vh;
+        color:white;
+        font-weight: 600;
+        font-size: larger;
+      }
+      .top-section{
+        position: relative;
+        top: 2vh;
+      }
+      .hero-section{
+       display:flex ;
+       flex-direction:column ;
+       position: relative;
+       bottom: 7vh;
+      }
+      .section-content .title{
+        color: black;
+        font-weight: 600;
+        font-style: italic;
+      }
+      .section-content .description{
+        position: relative;
+        max-width:50%;
+        max-height: 100%;
+      }
+      .section-content{
+        border-bottom: 2px solid white;
+        background: bisque;
+        color:black;
+        display: flex;
+        flex-direction:row;
+        padding: 20px 20px;
+        min-height: 100%;
+        min-width: 100%;
+        justify-content:space-evenly;
+      }
+      .hero-section .section-content .buttons{
+        position:relative;
+        left: 28vh;
+        bottom: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 10px;
+      }
+      .section-content .buttons .button{
+        padding: 3px 3px;
+        font-size: smaller;
+        width: 65px;
+      }
+      .section-content .hero-image{
+        position: relative;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 60%;
+        max-height: 100%;
+        border-radius: 5px;
+      }
+      .section-content .button{
+        background:rgb(255, 140, 0);
+        border-radius: 20px;
+        border: 2px solid white;
+        padding: 3px 3px;
+        position: relative;
+        top: 6vh;
+        right: 30vh;
+      }
+      .section-content .button:hover{
+        background: white;
+        transition: 0.3s ease;
+        border: 2px solid orangered;
+        color: black;
+      }
+      .section-content a{
+        text-decoration: none;
+        color:white;
+        font-weight: 600;
+      }
+      .section-content .hero-details{
+        position: relative;
+        left: 2vh;
+      }
+      .contact-section .section-content{
+        display:  flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        padding: 20px 20px;
+        gap: 20px;
+    
+      }
+      .contact-section .section-content .message{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+     
+      }
+      .contact-section .message .name{
+        height:4vh;
+        width: 40%;
+        border: 2px solid rgb(255, 140, 0);
+        border-radius: 10px;
+      }
+      .contact-section .message .meseg{
+        height: 25%;
+        width: 50%;
+        padding: 18px 18px;
+        border: 2px solid rgb(255, 140, 0);
+        border-radius: 10px;
+        
+      }
+      .contact-section .section-content .texts{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .contact-section .section-content .text{
+        font-size:smaller;
+        color: black;
+      }
+      .contact-section .section-content .section-title{
+        text-decoration: underline;
+        font-style: oblique; 
+        font-size: large;
+       }
+      .contact-section .section-content button{
+        width: 20vh;
+        background: rgb(255, 140, 0);
+        border: 2px solid white;
+        border-radius: 20px;
+       }
+      .contact-section .section-content button:hover{
+        background: white;
+        color: black;
+        border: 2px solid orangered;
+       }
+      .checkout-section .section-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 10px;
+      }
+      .checkout-section form{
+        display: flex;
+        font-size: larger;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        left: 10%;
+      }
+      .checkout-section  h2{
+        position:relative;
+        text-decoration: underline;
+        font-size: x-large;
+        left: 25%;
+      }
+      .checkout-section p{
+        background: palegoldenrod;
+        max-width: 60%;
+        height: 4vh;
+        padding: 10px 10px;
+        font-weight: 600;
+        font-size: large;
+        border: 2px solid orange;
+      }
+      .checkout-section form button{
+        background:rgb(255, 140, 0);
+        border-radius: 20px;
+        border: 2px solid white;
+        color: white;
+        width: 20vh;
+        height: 4vh;
+        position: relative;
+        left: 7vh;
+      }
+      .checkout-section form button:hover{
+        background: white;
+        color: black;
+        border: 2px solid orangered;
+      }
+      .checkout-section form input{
+       width: 50%;
+       border-radius: 8px;
+      }
+      .checkout-section form article{
+        max-width: 80%;
+        padding: 10px 10px;
+        font-weight: 600;
+        background:white;
+        border-radius: 20px;
+        border: 2px solid rgb(255, 140, 0);
+      }
+      .checkout-section i{
+        position: relative;
+        top: 8vh;
+        color:white;
+        left: 5vh;
+        font-size: 30px;
+      }
+      .checkout-section i:hover{
+        color: orangered;
+        transition: 0.3s ease;
+      }
+      .register{
+       background: blanchedalmond; 
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 25px;
+       padding: 25px 25px;
+       border-radius: 20px;
+      }
+      .register input{
+        border-radius: 10px;
+        height: 3vh;
+      }
+      .register button{
+        width: 20%;
+        height: 3vh;
+        background: rgb(255, 140, 0);
+        border-radius: 10px;
+        border: 2px solid white;
+      }
+      .register button:hover{
+        background: white;
+        transition: 0.3s ease;
+      }
+      .profile-card{
+        background: blanchedalmond;
+        height: 100%;
+        padding: 25px 25px;
+        font-weight: 500;
+        font-size: larger;
+      }
+      .profile-card .avatar{
+        font-size: 42px;
+        background: white;
+        width: 25%;
+        border-radius: 50%;
+        position: relative;
+        padding: 10px 10px;
+        left: 3vh;
+      }
+      .profile-card i{
+        font-size: 32px;
+        color: black;
+      }
+      .profile-card button{
+        background: rgb(255, 140, 0);
+        color: white;
+        height: 3vh;
+        border-radius: 10px;
+      }
+      .profile-card i:hover{
+        color: white;
+      }
+     
+ }

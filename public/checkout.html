@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+   
+    <title>checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="checkout-section">
+        <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    
+        <div class="section-content">
+            <h2> checkout</h2>
+            <p id="productInfo"></p>
+            <!--------hidden product fields-->
+            <form action="/submit-order" method="post" id="orderForm">
+              <input type="hidden" name="productName" id="productName">
+              <input type="hidden" name="productPrice" id="productPrice">
+              <label for="name" >your name:</label>
+             <input type="text" name="name" id="name" required>
+             <label for="phone">Phone number:</label>
+             <input type="tel" name="phone" id="phone" required>
+             <label for="residence" >Nearest location:</label>
+             <input type="text" name="residence" id="residence" required>
+             <button type="submit">place order</button>
+             <article>
+                <h2>Payment Procedure</h2>
+                <p2>Open your Mpesa app.<br> Select 'Send money' option. <br>Enter this number "0112821318".<br> Enter amount and your mpesa pin.</p2>
+             </article>
+            </form>
+        </div>
+    </section>
+    <script>
+      window.onload=function(){{
+        const urlParams=new URLSearchParams(window.location.search);
+         const productName=urlParams.get('productName');
+         const productPrice=urlParams.get('productPrice');
+         console.log(productName,productPrice);
+
+          if(productName && productPrice){document.getElementById('productInfo').textContent=`product:${productName},Price:${productPrice}`;
+         document.getElementById('productName').value=productName;
+         document.getElementById('productPrice').value=productPrice;
+         } else {document.getElementById('productInfo').textContent="no product selected.";
+        }
+     
+       //submit order
+       document.getElementById('orderForm').addEventListener('submit',async(e)=>{e.preventDefault();
+       const form=e.target;
+       const data={Product:form.productName.value, Price:form.productPrice.value, name:form.name.value, phone:form.phone.value, residence:form.residence.value};
+       try {const res=await fetch('/checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+       if(res.ok ){alert('Your order has been received!');
+        form.reset();
+        window.location.href='index.html';
+       } else {alert('Failed to place order.');}
+       }catch(err){console.error(err);
+       alert('We could not place your order,please try again later');
+       }
+       });
+      }}
+    </script>
+   
+
+  </body>
+</html>

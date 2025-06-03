@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+   
+    <title>checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            background:rgb(87, 9, 9);
+            padding: 20px;
+            color: white;
+        }
+        h2{
+            text-align: center;
+           text-decoration: underline;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background:orange;
+            margin-top: 20px;
+            color: black;
+        }
+        th,td{
+            padding: 12px;
+            border: 2px solid black;
+            text-align: left;
+        }
+        th{
+            background-color: rgb(22, 18, 18);
+            color:white;
+        }
+        tr:nth-child(even){
+         background-color:burlywood;
+         color: black;
+        }
+    </style>
+  </head>
+  <body>
+<h2>Masket Clients' orders</h2>
+
+<table >
+ <thead>
+    <tr>
+        <th>#</th>
+        <th>name</th>
+        <th>phone</th>
+        <th>residence</th>
+        <th>product</th>
+        <th>price</th>
+    </tr>
+ </thead>
+
+ <tbody id="orders">
+    <!-------orders will go here------>
+    <tr><td colspan="7">loading orders...</td></tr>
+ </tbody>
+</table>
+  <script>
+    window.onload=function() {
+      fetch('/orders').then(res =>res.json()).then(data => {const tbody=document.getElementById('orders');
+      if(data.length ===0) {tbody.innerHTML =' <tr><td colspan="7">No Orders Found</td></tr>';
+        retun;
+      }
+      tbody.innerHTML =data.map((order,index) =>`<tr> <td>${index + 1}</td><td>${order.name || 'N/A'}</td>
+        <td>${order.phone || 'N/A'}</td><td>${order.residence || 'N/A'}</td><td>${order.Product || 'N/A'}</td><td>${order.Price || 'N/A'}</td></tr>`
+      ).join('');
+      }).catch(err =>{console.error(err);
+        document.getElementById('orders').innerHTML ='<tr><td>colspan="7">Error loading orders</td></tr>';
+      });
+       
+    }
+    
+  </script>
+  </body>
+</html>

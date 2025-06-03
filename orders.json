@@ -1,0 +1,65 @@
+[
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "miles",
+    "phone": "011274348",
+    "residence": "siriba"
+  },
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "elkana",
+    "phone": "0706987174",
+    "residence": "nyawita"
+  },
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "roi",
+    "phone": "011274348",
+    "residence": "market"
+  },
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "josh",
+    "phone": "0725467298",
+    "residence": "mabungo"
+  },
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "bundi",
+    "phone": "0725756025",
+    "residence": "vikam"
+  },
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "collins",
+    "phone": "0765347289",
+    "residence": "space"
+  },
+  {
+    "Product": "jordan",
+    "Price": "120",
+    "name": "miles",
+    "phone": "0112821318",
+    "residence": "siriba"
+  },
+  {
+    "Product": "shirt",
+    "Price": "1200",
+    "name": "elly",
+    "phone": "0112821318",
+    "residence": "siriba"
+  },
+  {
+    "Product": "shirt",
+    "Price": "1200",
+    "name": "miles",
+    "phone": "0112821318",
+    "residence": "siriba"
+  }
+]
