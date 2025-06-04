@@ -3,13 +3,16 @@
    background:burlywood;
  }
   @media (min-width :768px){
-     html,body{
+    html{
+      scroll-behavior: smooth;
+    }
+    html,body{
       width: 100%;
       overflow-x:hidden;
       margin: 0;
     }
     header{
-      background:rgb(109, 7, 7);
+      background:saddlebrown;
        color: white;
        position: fixed;
        top: 0px;
@@ -350,7 +353,11 @@
       transition: 0.3s ease;
     }
     .register{
-     background: burlywood; 
+      position: relative;
+      left: 20%;
+     background:saddlebrown; 
+     color: white;
+     width: 70%;
      height: 100%;
      display: flex;
      flex-direction: column;
@@ -363,6 +370,10 @@
       width: 50%;
       height: 4vh;
       
+    }
+    .register i{
+      color: white;
+      font-size: xx-large;
     }
     .register button{
       width: 20%;
@@ -410,13 +421,16 @@
     }
   }
   @media (max-width:768px){
+    html{
+      scroll-behavior: smooth;
+    }
     html,body{
       width: 100%;
       overflow-x:hidden;
       margin: 0;
     }
     header{
-      background:rgb(109, 7, 7);
+      background:saddlebrown;
        color: white;
        position: fixed;
        top: 0px;
@@ -426,18 +440,24 @@
        border-bottom: 2px solid white;
        max-width: 100%;
       }
-      .navbar .nav-logo a{
+      .navbar .nav-logo h2{
         text-decoration:underline;
         color:gold;
-        font-size: larger;
+        font-size: x-large;
         position:relative;
-        left:13%;
+        left:3%;
+        bottom: 2vh;
         font-style: oblique;
       } 
       .navbar p3 i{
         position: relative;
-        bottom: 6vh;
-        right: 4vh;
+        color: white;
+        bottom: 4vh;
+        left: 33%;
+        font-size: 23px;
+      }
+      .navbar p3 :hover{
+        color:orange;
       }
       .searchbar{
        position: relative;
@@ -453,7 +473,7 @@
       }
       .searchbar input{
         border-radius: 10px;
-        height: 3vh;
+        height: 4vh;
       }
       .searchbar button{
         font-size: 20px;
@@ -468,13 +488,13 @@
         flex-direction: row;  
        position: relative;
        left: 33%;
-       bottom: 5vh;
+       bottom: 3vh;
        gap: 8px;
       }
       .nav-menue .nav-link{
         padding: 10px 10px;
        position: relative;
-       bottom: 6vh;
+       bottom: 7vh;
       }
       ul{
        list-style: none;
@@ -561,7 +581,7 @@
       }
       .section-content{
         border-bottom: 2px solid white;
-        background:bisque;
+        background:beige;
         color:black;
         display: flex;
         flex-direction:row;
@@ -745,13 +765,18 @@
         transition: 0.3s ease;
       }
       .register{
-       background: blanchedalmond; 
+       background: saddlebrown; 
+       color: white;
        height: 100%;
        display: flex;
        flex-direction: column;
        gap: 25px;
        padding: 25px 25px;
        border-radius: 20px;
+      }
+      .register i{
+        font-size: larger;
+        color:white;
       }
       .register input{
         border-radius: 10px;
@@ -760,7 +785,7 @@
       .register button{
         width: 20%;
         height: 4vh;
-        background: rgb(255, 140, 0);
+        background:rgb(241, 168, 32);
         border-radius: 10px;
         border: 2px solid white;
       }
@@ -769,14 +794,14 @@
         transition: 0.3s ease;
       }
       .profile-card{
-        background: rgb(231, 143, 12);
+        background: saddlebrown;
+        color: white;
         height: 100%;
         padding: 25px 25px;
         font-weight: 500;
         font-size: larger;
         position: relative;
-        width: 60%;
-        left: 10%;
+        width: 100%;
       }
       .profile-card .avatar{
         font-size: 42px;
@@ -792,7 +817,7 @@
         color: black;
       }
       .profile-card button{
-        background: rgb(255, 140, 0);
+        background: rgb(228, 135, 22);
         color: white;
         height: 4vh;
         border-radius: 10px;
