@@ -43,9 +43,9 @@ const transporter=nodemailer.createTransport({service:'gmail', auth: {user:proce
 });
 const mailOptions={from:process.env.EMAIL_USER, to:process.env.EMAIL_RECEIVER,subject:'New Contact Form Message',
   text:`Name: ${name}\nPhone: ${phone}\nMessage: ${message}`,};
-transporter.sendMail(mailOptions,(error,info)=>{if(error){console.error('Email failed:',error);
+transporter.sendMail(mailOptions,(error,info)=>{if(error){console.error('Failed to send your message.Please try again:',error);
   return res.send(`<script>alert('Failed to send message. Try again later.');window.location.href='/';</script>`);
-} res.send(`<script>alert('Message sent successfully!');
+} res.send(`<script>alert('Your Message has been sent successfully!');
   window.location.href='/index.html';</script>`);
 });
 

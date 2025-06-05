@@ -700,6 +700,9 @@
         flex-direction: column;
         padding: 15px 10px;
       }
+      .checkout-section .section-content p{
+        width:100%;
+      }
       .checkout-section form{
         display: flex;
         font-size: larger;
