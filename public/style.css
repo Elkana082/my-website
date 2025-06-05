@@ -719,7 +719,7 @@
       }
       .checkout-section p{
         background: palegoldenrod;
-        max-width: 60%;
+        max-width: 100%;
         height: 4vh;
         padding: 10px 10px;
         font-weight: 600;
